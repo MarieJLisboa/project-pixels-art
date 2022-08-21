@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url("https://wallpaperaccess.com/full/1711593.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+#title {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(236, 108, 150);
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.navbar, .container {
+  background-color: rgb(255, 194, 198);
+  width: 250px; 
+  border-radius: 10px;
+}
+
+.navbar {
+  padding: 1em;
+  margin-bottom: 1em; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  cursor: pointer;
+}
+
+.btn, input, #generate-board {
+  height: 25px;
+  width: 2cm;
+  margin: 10px;
+  padding: 0 1em; 
+  background-color: mistyrose;
+  border-radius: 5px;
+  border: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(236, 108, 150);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.color {
+  padding: 0 .25em; 
+  width: 30px;
+  height: 25px;
+  margin: 0 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.container {
+  --size: 5;
+  height: auto;
+  width: auto;
+  padding: 3px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: 40px;
+  grid-template-columns: repeat(var(--size), 1fr);
+  grid-template-rows: repeat(var(--size), 1fr);
+  gap: 0;
+}
+
+.pixel {
+  background-color: white;
+  border-radius: 2px;
+  grid-template-areas: 39px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  align-items: center;
+}
+
+#black {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#steelblue {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#palevioletred {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#teal {
+  border: 1px solid black;
+  border-radius: 5px;
+}

@@ -1,0 +1,16 @@
+# VSCode repo settings
+.vscode
+node_modules
+cypress/
+cypress
+.editorconfig
+.eslintignore
+.eslintrc.json
+.stylelintrc.json
+cypress.json
+reporter.json
+package-lock.json
+package.json
+.github
+.trybe
+trybe.yml
